@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="test.css" />
+    <script defer src="index.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TikTakToe</title>
+  </head>
+  <body>
+    <section>
+      <p id="namePlayerWin"></p>
+      <div class="gameContainer">
+        <button class="cel" onclick="moves(0)" disabled></button>
+        <button class="cel" onclick="moves(1)" disabled></button>
+        <button class="cel" onclick="moves(2)" disabled></button>
+        <button class="cel" onclick="moves(3)" disabled></button>
+        <button class="cel" onclick="moves(4)" disabled></button>
+        <button class="cel" onclick="moves(5)" disabled></button>
+        <button class="cel" onclick="moves(6)" disabled></button>
+        <button class="cel" onclick="moves(7)" disabled></button>
+        <button class="cel" onclick="moves(8)" disabled></button>
+      </div>
+      <button class="playGame" id="btnGo" name="players">Começar</button>
+      <div class="namePlayers">
+        <label for="namePlayerX:">Name player X:</label>
+        <input type="text" name="players" id="namePlayerX" required />
+        <label for="namePlayerO:">Name player O:</label>
+        <input type="text" name="players" id="namePlayerO" required />
+      </div>
+    </section>
+  </body>
+</html>
